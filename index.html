@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-        /* 1. ส่วนควบคุมแถบโซนบับเบิลด้านบนสุด */
+        /* แถบควบคุมบับเบิลด้านบนสุด (ไม่มีตัวหนังสืออื่นรบกวน) */
         .top-bubble-container {
             display: flex;
-            justify-content: center; /* จัดให้อยู่ตรงกลางหน้าจอ */
-            gap: 15px;               /* ระยะห่างระหว่างบับเบิล */
+            justify-content: center; /* จัดบับเบิลให้อยู่ตรงกลางหน้าจอ */
+            gap: 15px;               /* ระยะห่างระหว่าง 2 บับเบิล */
             padding: 15px;
-            background-color: #ffffff; /* พื้นหลังแถบขาวเพื่อความเด่น */
+            background-color: #ffffff; /* พื้นหลังแถบสีขาวเพื่อให้ปุ่มเด่น */
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-            position: sticky;        /* ตั้งค่าให้ล็อกติดขอบบนสุดตอนเลื่อนหน้าจอ */
+            position: sticky;        /* ล็อกแถบปุ่มให้ติดขอบบนสุดตลอดเวลาตอนเลื่อนหน้าจอ */
             top: 0;
             z-index: 999;
         }
 
-        /* 2. สไตล์โครงสร้างของตัวบับเบิล */
+        /* รูปทรงและสไตล์ของบับเบิล */
         .bubble-btn {
             display: inline-flex;
             align-items: center;
-            gap: 8px;                /* ระยะห่างไอคอนกับข้อความ */
-            padding: 10px 22px;
-            border-radius: 50px;     /* ปรับขอบให้มนกลมเป็นรูปทรงบับเบิล */
+            gap: 8px;
+            padding: 12px 25px;      /* เพิ่มขนาดปุ่มให้กดง่ายเต็มตาบนมือถือ */
+            border-radius: 50px;     /* ปรับขอบให้โค้งมนเป็นทรงบับเบิล */
             color: #ffffff;
             text-decoration: none;
             font-weight: bold;
@@ -28,22 +28,22 @@
         }
 
         .bubble-btn:hover {
-            transform: scale(1.05); /* ขยายใหญ่ขึ้นเล็กน้อยเมื่อเอาเมาส์ไปชี้ */
+            transform: scale(1.05); /* ขยายใหญ่ขึ้นเล็กน้อยเมื่อเอาเมาส์มาชี้ */
         }
 
-        /* 3. ตกแต่งสีสันให้แต่ละบับเบิล */
+        /* สีสันของบับเบิล */
         .btn-call {
-            background-color: #27ae60; /* สีเขียวเข้มสำหรับปุ่มโทร */
+            background-color: #27ae60; /* สีเขียวสำหรับปุ่มโทร */
         }
 
         .btn-line {
-            background-color: #06c755; /* สีแบรนด์ LINE */
+            background-color: #06c755; /* สีเขียวแบรนด์ LINE */
         }
 
-        /* โซนเนื้อหาด้านล่างแถบ */
+        /* โซนเนื้อหารายละเอียดด้านล่างแถบปุ่ม */
         .main-content {
             max-width: 600px;
-            margin: 30px auto;
+            margin: 20px auto;
             padding: 20px;
             background: #ffffff;
             border-radius: 12px;
@@ -54,28 +54,10 @@
 </head>
 <body>
 
-    <!-- โซนบับเบิลสี ๆ ด้านบนสุด -->
-    <div class="top-bubble-container">
-        <!-- บับเบิลโทรศัพท์ (เปลี่ยนเบอร์โทรใน href และตัวอักษรได้เลย) -->
-        <a href="tel:0933813157" class="bubble-btn btn-call">
-            <i class="fa-solid fa-phone"></i> โทรด่วน 093-381-3157
-        </a>
-        
-        <!-- บับเบิล LINE (เปลี่ยนไอดีไลน์ต่อท้ายเครื่องหมาย ~ ได้เลย) -->
-        <a href="https://line.me" class="bubble-btn btn-line">
-            <i class="fa-brands fa-line"></i> แอดไลน์จองรถ
-        </a>
-    </div>
-
-    <!-- โซนเนื้อหาของเว็บ -->
-    <div class="main-content">
-        <h2>🚕 แท็กซี่สนามบินเชียงราย</h2>
-        <p>ยินดีต้อนรับสู่บริการจองรถแท็กซี่เชียงราย ปลอดภัย สะดวก รวดเร็ว บริการ 24 ชั่วโมง</p>
     </div>
 
 </body>
 </html>
-
 <html class="ltr" dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr" style="transform: none;"><head>
 <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport">
 <title>แท็กซี่เชียงราย</title>
