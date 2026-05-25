@@ -1,3 +1,98 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แท็กซี่เชียงราย - บริการ 24 ชั่วโมง</title>
+    
+    <!-- ดึงไอคอนโทรศัพท์และไลน์มาใช้งาน -->
+    <link href="https://cloudflare.com" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5fa;
+        }
+
+        /* 1. ส่วนควบคุมแถบโซนบับเบิลด้านบนสุด */
+        .top-bubble-container {
+            display: flex;
+            justify-content: center; /* จัดให้อยู่ตรงกลางหน้าจอ */
+            gap: 15px;               /* ระยะห่างระหว่างบับเบิล */
+            padding: 15px;
+            background-color: #ffffff; /* พื้นหลังแถบขาวเพื่อความเด่น */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            position: sticky;        /* ตั้งค่าให้ล็อกติดขอบบนสุดตอนเลื่อนหน้าจอ */
+            top: 0;
+            z-index: 999;
+        }
+
+        /* 2. สไตล์โครงสร้างของตัวบับเบิล */
+        .bubble-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;                /* ระยะห่างไอคอนกับข้อความ */
+            padding: 10px 22px;
+            border-radius: 50px;     /* ปรับขอบให้มนกลมเป็นรูปทรงบับเบิล */
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .bubble-btn:hover {
+            transform: scale(1.05); /* ขยายใหญ่ขึ้นเล็กน้อยเมื่อเอาเมาส์ไปชี้ */
+        }
+
+        /* 3. ตกแต่งสีสันให้แต่ละบับเบิล */
+        .btn-call {
+            background-color: #27ae60; /* สีเขียวเข้มสำหรับปุ่มโทร */
+        }
+
+        .btn-line {
+            background-color: #06c755; /* สีแบรนด์ LINE */
+        }
+
+        /* โซนเนื้อหาด้านล่างแถบ */
+        .main-content {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- โซนบับเบิลสี ๆ ด้านบนสุด -->
+    <div class="top-bubble-container">
+        <!-- บับเบิลโทรศัพท์ (เปลี่ยนเบอร์โทรใน href และตัวอักษรได้เลย) -->
+        <a href="tel:0933813157" class="bubble-btn btn-call">
+            <i class="fa-solid fa-phone"></i> โทรด่วน 093-381-3157
+        </a>
+        
+        <!-- บับเบิล LINE (เปลี่ยนไอดีไลน์ต่อท้ายเครื่องหมาย ~ ได้เลย) -->
+        <a href="https://line.me" class="bubble-btn btn-line">
+            <i class="fa-brands fa-line"></i> แอดไลน์จองรถ
+        </a>
+    </div>
+
+    <!-- โซนเนื้อหาของเว็บ -->
+    <div class="main-content">
+        <h2>🚕 แท็กซี่สนามบินเชียงราย</h2>
+        <p>ยินดีต้อนรับสู่บริการจองรถแท็กซี่เชียงราย ปลอดภัย สะดวก รวดเร็ว บริการ 24 ชั่วโมง</p>
+    </div>
+
+</body>
+</html>
+
 <html class="ltr" dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr" style="transform: none;"><head>
 <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport">
 <title>แท็กซี่เชียงราย</title>
